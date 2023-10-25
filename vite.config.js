@@ -12,7 +12,6 @@ const outDir = resolve(__dirname, "dist");
 
 export default defineConfig({
   root,
-  base: "/",
   server: {
     host: true,
     port: 8080,
@@ -46,4 +45,5 @@ export default defineConfig({
   css: {
     postcss: "./postcss.config.js",
   },
+  // base: "/D3assessoria-template/",
 });

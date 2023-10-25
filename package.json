@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "yarn build && gh-pages -d dist --remote github && rm -rf dist"
   },
   "devDependencies": {
     "vite": "^4.3.9",
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3"
   }
