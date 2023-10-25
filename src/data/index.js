@@ -103,22 +103,26 @@ export default {
     ],
     equipe: [
       {
-        imagem: "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        imagem:
+          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
         nome: "Pedro Tavares",
-        cargo: "Princepe Herdeiro",
+        cargo: "Príncipe1 Herdeiro",
       },
       {
-        imagem: "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        imagem:
+          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
         nome: "Pikachu Tavares",
         cargo: "Animador de torcida",
       },
       {
-        imagem: "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        imagem:
+          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
         nome: "Deise Tavares",
         cargo: "Dona da P***a toda",
       },
       {
-        imagem: "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        imagem:
+          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
         nome: "Marcelleza",
         cargo: "Solucionador de problemas",
       },
