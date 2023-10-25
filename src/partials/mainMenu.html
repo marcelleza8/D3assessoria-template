@@ -1,0 +1,17 @@
+<!-- Menu principal -->
+<nav aria-label="Menu Principal" class="flex">
+  <ul class="flex space-x-4" role="menu">
+    {{#each menu}}
+    <li class="group relative">
+      <button
+        aria-haspopup="true"
+        aria-expanded="false"
+        class="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        {{this.label}}
+      </button>
+    </li>
+    {{/each}}
+  </ul>
+  <div>Teste</div>
+</nav>

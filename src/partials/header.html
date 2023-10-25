@@ -1,0 +1,51 @@
+<header class="sticky top-0 z-10 bg-[#ffd0be] text-white">
+  <section class="mx-auto flex items-center justify-between p-4">
+    <h1 class="text-3xl font-medium">
+      <a href="#pagina-inicial">
+        <div>
+          <h1 class="text-rouge-700 uppercase font-bold text-xl">
+            D3 Assessoria em comunicação
+          </h1>
+          <h3 class="text-sm text-dove-gray-500">
+            Comunicando Valores, Construindo Negócios
+          </h3>
+        </div>
+      </a>
+    </h1>
+    <div>
+      <button
+        id="hamburger-button"
+        class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+      >
+        <!-- &#9776; -->
+        <div
+          class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+        ></div>
+      </button>
+      <nav class="hidden space-x-8 text-xl md:block text-dove-gray-500" aria-label="main">
+        {{#each menu}}
+        <a href="{{this.url}}" class="hover:opacity-90">{{ this.label }}</a>
+        {{/each}}
+      </nav>
+    </div>
+  </section>
+  <section
+    id="mobile-menu"
+    class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl"
+  >
+    <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+    <nav
+      class="flex min-h-screen flex-col items-center py-8"
+      aria-label="mobile"
+    >
+      <a href="#pagina-inicial" class="w-full py-6 text-center hover:opacity-90">Página inicial</a>
+      {{#each menu}}
+      <a href="{{this.url}}" class="w-full py-6 text-center hover:opacity-90"
+        >{{ this.label }}</a
+      >
+      {{/each}}
+    </nav>
+  </section>
+</header>
