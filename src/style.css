@@ -1,13 +1,17 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer utilities {
-    .section-min-height {
-        min-height: calc(100vh - 68px)
-    }
+  .section-min-height {
+    min-height: calc(100vh - 68px);
+  }
 
-    .toggle-btn {
-        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
-    }
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg];
+  }
+}
+
+section {
+  @apply widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4 p-4 m-2 bg-gray-200;
 }

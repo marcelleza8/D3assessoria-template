@@ -17,14 +17,14 @@
         id="pagina-inicial"
         class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
       >
-        <article class="sm:w-1/2">
+        <article class="sm:w-1/2 text-left">
           <h2
-            class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl"
+            class="max-w-md text-left text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
           >
             Conectando
-            <span class="text-indigo-700 dark:text-indigo-300">Histórias</span>
+            <span class="text-[#6a4a79] dark:text-indigo-300">Histórias</span>
             Revelando
-            <span class="text-indigo-700 dark:text-indigo-300">Essências</span>
+            <span class="text-[#6a4a79] dark:text-indigo-300">Essências</span>
           </h2>
           <p
             class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
@@ -47,9 +47,14 @@
       <!-- Quem somos -->
       <section
         id="quem-somos"
-        class="widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4"
+        class="widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4 p-4 m-2 bg-gray-200"
       >
-        <h1>Quem somos</h1>
+        <h1
+          title="título da seção quem somos"
+          class="text-center text-3xl fold-extrabold"
+        >
+          Quem somos
+        </h1>
         <h2>Conectando Almas, Contando Histórias, Elevando Marcas</h2>
         <article class="text-justify flex flex-col space-y-2">
           <p>
@@ -80,6 +85,8 @@
             extensão de sua visão e valores.
           </p>
         </article>
+      </section>
+      <section id="quem-somos">
         <article>
           <h2>Nossa Equipe</h2>
           <p>
@@ -93,11 +100,11 @@
             <div
               class="bg-white rounded-md mx-auto relative shadow-lg overflow-hidden border-8"
             >
-            <div class="absolute top-4 left-4">
-              <p class="text-xl font-bold">{{this.nome}}</p>
-              <p class="pl-3">{{this.cargo}}</p>
-              <hr class="mt-2 ml-6 w-16">
-            </div>
+              <div class="absolute top-4 left-4">
+                <p class="text-xl font-bold">{{this.nome}}</p>
+                <p class="pl-3">{{this.cargo}}</p>
+                <hr class="mt-2 ml-6 w-16" />
+              </div>
               <img src="{{this.imagem}}" alt="" />
               <ul class="absolute">
                 <li></li>
