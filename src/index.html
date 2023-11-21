@@ -9,15 +9,36 @@
     <script src="main.js" type="module" defer></script>
   </head>
 
-  <body class="min-h-screen dark:bg-[#a2416c] dark:text-white">
+  <body class="min-h-screen bg-white dark:bg-[#a2416c] dark:text-white">
     {{>header}}
-    <main class="mx-auto max-w-4xl">
+    <main>
       <!-- HERO -->
       <section
         id="pagina-inicial"
-        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 pb-6 mx-auto bg-green-400"
       >
-        <article class="sm:w-1/2 text-left">
+        <div class="relative overflow-hidden w-full">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide bg-purple-400">
+                <img src="./banner001.jpg" />
+                <div class="absolute bottom-20 right-20 text-3xl"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./6c4e3bc9-0494-4ba1-8402-f798a1e5670b.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./88b28b4e-e4d4-489c-9bea-d3f4ed35542f.webp" />
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <!-- /swiper-container -->
+
+        <article class="sm:w-1/2 text-left hidden" data-aos="zoom-in">
           <h2
             class="max-w-md text-left text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
           >
@@ -38,59 +59,95 @@
             Pense D3 Assessoria.
           </p>
         </article>
-        <img class="w-1/2" src="/Logo-Deise.png" alt="Rocket Dab" />
+        <img class="w-1/2 hidden" src="/Logo-Deise.png" alt="Rocket Dab" />
       </section>
       <!-- Quem somos -->
       <section
         id="quem-somos"
-        class="widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4 p-4 m-2 bg-gray-200"
+        class="widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4 p-4 m-2 bg-gray-200 max-w-4xl mx-auto"
       >
         <h1
           title="título da seção quem somos"
           class="text-center text-3xl fold-extrabold"
+          data-aos="fade-left"
         >
           Quem somos
         </h1>
-        <h2>Conectando Almas, Contando Histórias, Elevando Marcas</h2>
-        <article class="text-justify flex flex-col space-y-2">
-          <p>
-            Somos uma equipe apaixonada e especializada em assessoria,
-            estratégias de marketing e comunicação, dedicada a revelar e
-            amplificar a alma de cada marca que representamos.
-          </p>
-          <p>
-            Nossa missão é ir além do convencional, mergulhando fundo nas
-            histórias, valores e visões únicas de nossos clientes, para criar
-            conexões autênticas e duradouras com seu público.
-          </p>
-          <p>
-            Acreditamos que o verdadeiro poder do marketing reside em contar
-            histórias genuínas, trazendo a essência e destacando a sua
-            singularidade.
-          </p>
-          <p>
-            Quem somos é um reflexo de nossa paixão por ajudar as marcas a
-            brilharem, e nossa dedicação em tornar cada história de marca uma
-            experiência memorável.
-          </p>
-          <p>
-            Imagine um parceiro que mergulha fundo em sua marca, compreendendo
-            não apenas o que você faz, mas por que você faz. Na D3 Assessoria,
-            objetivo não está em volume e produção, de posts prontos; criamos
-            uma estratégia de comunicação com ferramentas de marketing que é uma
-            extensão de sua visão e valores.
-          </p>
-        </article>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="relative">
+            <div class="grid grid-cols-4 md:grid-cols-2">
+              <img
+                data-aos="fade-down"
+                src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                alt=""
+              /><img
+                data-aos="fade-left"
+                class=""
+                src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                alt=""
+              /><img
+                data-aos="fade-right"
+                class=""
+                src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                alt=""
+              /><img
+                data-aos="fade-up"
+                class=""
+                src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="pl-8">
+            <h2 data-aos="zoom-in">
+              Conectando Almas, Contando Histórias, Elevando Marcas
+            </h2>
+            <article data-aos="zoom-in" class="flex flex-col space-y-2">
+              <p>
+                Somos uma equipe apaixonada e especializada em assessoria,
+                estratégias de marketing e comunicação, dedicada a revelar e
+                amplificar a alma de cada marca que representamos.
+              </p>
+              <p>
+                Nossa missão é ir além do convencional, mergulhando fundo nas
+                histórias, valores e visões únicas de nossos clientes, para
+                criar conexões autênticas e duradouras com seu público.
+              </p>
+              <p class="hidden">
+                Acreditamos que o verdadeiro poder do marketing reside em contar
+                histórias genuínas, trazendo a essência e destacando a sua
+                singularidade.
+              </p>
+              <p class="hidden">
+                Quem somos é um reflexo de nossa paixão por ajudar as marcas a
+                brilharem, e nossa dedicação em tornar cada história de marca
+                uma experiência memorável.
+              </p>
+              <p class="hidden">
+                Imagine um parceiro que mergulha fundo em sua marca,
+                compreendendo não apenas o que você faz, mas por que você faz.
+                Na D3 Assessoria, objetivo não está em volume e produção, de
+                posts prontos; criamos uma estratégia de comunicação com
+                ferramentas de marketing que é uma extensão de sua visão e
+                valores.
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
       <section id="quem-somos">
         <article>
-          <h2>Nossa Equipe</h2>
-          <p>
-            Conheça a equipe apaixonada da D3 Assessoria. Somos mais do que
-            especialistas em comunicação e marketing, somos contadores de
-            histórias, apaixonados por desvendar a alma de cada marca que
-            representamos.
-          </p>
+          <div
+            class="flex flex-col md:flex-row justify-between text-center mb-16"
+          >
+            <h2 class="text-2xl font-extrabold">Nossa Equipe</h2>
+            <p class="md:w-1/2">
+              Conheça a equipe apaixonada da D3 Assessoria. Somos mais do que
+              especialistas em comunicação e marketing, somos contadores de
+              histórias, apaixonados por desvendar a alma de cada marca que
+              representamos.
+            </p>
+          </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {{#each equipe}}
             <div

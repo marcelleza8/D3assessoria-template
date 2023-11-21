@@ -1,13 +1,13 @@
 import "./style.css";
-// import javascriptLogo from "./javascript.svg";
-// import viteLogo from "/vite.svg";
-// import { setupCounter } from "./counter.js";
 
-// document.querySelector("#vite-logo").src = viteLogo;
-// document.querySelector("#javascript-logo").src = javascriptLogo;
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-// setupCounter(document.querySelector("#counter"));
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const initApp = () => {
   const hamburgerBtn = document.getElementById("hamburger-button");
@@ -21,6 +21,31 @@ const initApp = () => {
 
   hamburgerBtn.addEventListener("click", toggleMenu);
   mobileMenu.addEventListener("click", toggleMenu);
+
+  AOS.init({
+    duration: 1200,
+  });
+
+  const swiper = new Swiper(".swiper-container", {
+    // Módulos
+    modules: [Navigation, Pagination],
+    // Opções do Swiper
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    effect: "cube",
+    autoplay: {
+      delay: 500,
+    },
+    pagination: { el: ".swiper-pagination" },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  swiper.on("slideChange", () => {
+    AOS.refresh();
+  });
 };
 
 document.addEventListener("DOMContentLoaded", initApp);

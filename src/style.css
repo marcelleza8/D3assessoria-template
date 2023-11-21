@@ -15,3 +15,7 @@
 section.section {
   @apply widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4 p-4 m-2 bg-gray-200;
 }
+
+.no-aos {
+  @apply opacity-100 translate-x-0 translate-y-0 scale-100 transition-none;
+}
