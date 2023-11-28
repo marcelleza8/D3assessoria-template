@@ -46,6 +46,24 @@ const initApp = () => {
   swiper.on("slideChange", () => {
     AOS.refresh();
   });
+
+  const swiperServices = new Swiper(".swiper-container-services", {
+    // Módulos
+    modules: [Navigation, Pagination],
+    // Opções do Swiper
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    effect: "cube",
+    autoplay: {
+      delay: 500,
+    },
+    pagination: { el: ".swiper-pagination" },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 };
 
 document.addEventListener("DOMContentLoaded", initApp);

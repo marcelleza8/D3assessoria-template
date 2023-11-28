@@ -184,34 +184,32 @@
       <!-- /HERO -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
       <!-- SERVIÇOS -->
-      <section
-        id="servicos"
-        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
-      >
+      <section id="servicos">
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
           Serviços
         </h2>
-        <ul
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-none"
-        >
-          {{#each servicos}}
-          <li
-            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
-          >
-            <h3
-              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-            >
-              {{this.titulo}}
-            </h3>
-            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-              >{{this.texto}}</span
-            >
-          </li>
-          {{/each}}
-        </ul>
+        <div class="swiper-container-services overflow-hidden">
+          <div class="swiper-wrapper">
+            {{#each servicos}}
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <h3
+                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+              >
+                {{this.titulo}}
+              </h3>
+              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+                >{{this.texto}}</span
+              >
+            </div>
+            {{/each}}
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
       <!-- /SERVIÇOS -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
@@ -223,31 +221,33 @@
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
-          Depoimentos
+          Parceiros
         </h2>
         <h3>
           Cada perceria reflete uma conquista única em nossa jornada de conectar
           marcas à sua essência. Os depoimentos são testemunhos vivos de
           transformações e sucessos compartilhados.
         </h3>
-        {{#each depoimentos}}
-        <figure class="my-12">
-          <blockquote
-            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
-          >
-            <p
-              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+        <div class="grid grid-cols-3 gap-8">
+          {{#each depoimentos}}
+          <figure class="my-12">
+            <blockquote
+              class="relative rounded-3xl bg-teal-600 p-8 dark:bg-black"
             >
-              {{this.texto}}
-            </p>
-          </blockquote>
-          <figcaption
-            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
-          >
-            &#8212;{{this.titulo}}
-          </figcaption>
-        </figure>
-        {{/each}}
+              <p
+                class="text-left text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-6xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:bottom-[-1rem] after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-6xl after:text-white after:opacity-25 after:content-['\201D']"
+              >
+                {{this.texto}}
+              </p>
+            </blockquote>
+            <figcaption
+              class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+            >
+              &#8212;{{this.titulo}}
+            </figcaption>
+          </figure>
+          {{/each}}
+        </div>
       </section>
 
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
