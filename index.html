@@ -7,11 +7,11 @@
     <title>D3 ASSESSORIA  DE COMUNICAÇÃO – Comunicando Valores, Construindo Negócios</title>
     
     
-    <script type="module" crossorigin src="/D3assessoria-template/assets/main-8357fbe1.js"></script>
-    <link rel="stylesheet" href="/D3assessoria-template/assets/index-cc2de45a.css">
+    <script type="module" crossorigin src="/assets/main-f239cd0b.js"></script>
+    <link rel="stylesheet" href="/assets/index-99ede071.css">
   </head>
 
-  <body class="min-h-screen dark:bg-[#a2416c] dark:text-white">
+  <body class="min-h-screen bg-white dark:bg-[#a2416c] dark:text-white">
     <header class="sticky top-0 z-10 bg-[#ffd0be] text-white">
       <section class="mx-auto flex items-center justify-between p-4">
         <h1 class="text-3xl font-medium">
@@ -36,7 +36,10 @@
               class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
             ></div>
           </button>
-          <nav class="hidden space-x-8 text-xl md:block text-dove-gray-500" aria-label="main">
+          <nav
+            class="hidden space-x-8 text-xl md:block text-dove-gray-500"
+            aria-label="main"
+          >
             <a href="#quem-somos" class="hover:opacity-90">Quem somos</a>
             <a href="#servicos" class="hover:opacity-90">Serviços</a>
             <a href="#parceiros" class="hover:opacity-90">Parceiros</a>
@@ -55,7 +58,9 @@
           class="flex min-h-screen flex-col items-center py-8"
           aria-label="mobile"
         >
-          <a href="#pagina-inicial" class="w-full py-6 text-center hover:opacity-90">Página inicial</a>
+          <a href="#pagina-inicial" class="w-full py-6 text-center hover:opacity-90"
+            >Página inicial</a
+          >
           <a href="#quem-somos" class="w-full py-6 text-center hover:opacity-90"
             >Quem somos</a
           >
@@ -71,20 +76,41 @@
         </nav>
       </section>
     </header>
-    <main class="mx-auto max-w-4xl">
+    <main>
       <!-- HERO -->
       <section
         id="pagina-inicial"
-        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 pb-6 mx-auto bg-green-400"
       >
-        <article class="sm:w-1/2">
+        <div class="relative overflow-hidden w-full">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide bg-purple-400">
+                <img src="./banner001.jpg" />
+                <div class="absolute bottom-20 right-20 text-3xl"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./6c4e3bc9-0494-4ba1-8402-f798a1e5670b.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./88b28b4e-e4d4-489c-9bea-d3f4ed35542f.webp" />
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <!-- /swiper-container -->
+
+        <article class="sm:w-1/2 text-left hidden" data-aos="zoom-in">
           <h2
-            class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl"
+            class="max-w-md text-left text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
           >
             Conectando
-            <span class="text-indigo-700 dark:text-indigo-300">Histórias</span>
+            <span class="text-[#6a4a79] dark:text-indigo-300">Histórias</span>
             Revelando
-            <span class="text-indigo-700 dark:text-indigo-300">Essências</span>
+            <span class="text-[#6a4a79] dark:text-indigo-300">Essências</span>
           </h2>
           <p
             class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
@@ -98,65 +124,133 @@
             Pense D3 Assessoria.
           </p>
         </article>
-        <img
-          class="w-1/2"
-          src="https://assessoriad3.com.br/wp-content/uploads/2023/09/Logo-Deise.png"
-          alt="Rocket Dab"
-        />
+        <img class="w-1/2 hidden" src="/Logo-Deise.png" alt="Rocket Dab" />
       </section>
       <!-- Quem somos -->
       <section
         id="quem-somos"
-        class="widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4"
+        class="widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4 p-4 m-2 bg-gray-200 max-w-4xl mx-auto"
       >
-        <h1>Quem somos</h1>
-        <h2>Conectando Almas, Contando Histórias, Elevando Marcas</h2>
-        <article class="text-justify flex flex-col space-y-2">
-          <p>
-            Somos uma equipe apaixonada e especializada em assessoria,
-            estratégias de marketing e comunicação, dedicada a revelar e
-            amplificar a alma de cada marca que representamos.
-          </p>
-          <p>
-            Nossa missão é ir além do convencional, mergulhando fundo nas
-            histórias, valores e visões únicas de nossos clientes, para criar
-            conexões autênticas e duradouras com seu público.
-          </p>
-          <p>
-            Acreditamos que o verdadeiro poder do marketing reside em contar
-            histórias genuínas, trazendo a essência e destacando a sua
-            singularidade.
-          </p>
-          <p>
-            Quem somos é um reflexo de nossa paixão por ajudar as marcas a
-            brilharem, e nossa dedicação em tornar cada história de marca uma
-            experiência memorável.
-          </p>
-          <p>
-            Imagine um parceiro que mergulha fundo em sua marca, compreendendo
-            não apenas o que você faz, mas por que você faz. Na D3 Assessoria,
-            objetivo não está em volume e produção, de posts prontos; criamos
-            uma estratégia de comunicação com ferramentas de marketing que é uma
-            extensão de sua visão e valores.
-          </p>
-        </article>
+        <span
+          title="título da seção quem somos"
+          class="text-center text-sm bg-indigo-200 text-primary inline-block px-3 py-1 font-plus-jakarta-sans font-extrabold rounded-full"
+        >
+          Sobre a D3 Assessoria
+        </span>
+        <h2 data-aos="zoom-in" class="font-extrabold text-2xl font-urbanist">
+          Conectando Almas, Contando Histórias, Elevando Marcas
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="relative">
+            <div class="grid grid-cols-4 md:grid-cols-2">
+              <div class="flip-card">
+                <input
+                  type="radio"
+                  id="flipCardRadio"
+                  name="flipCardRadio"
+                  class="hidden flip-card-trigger"
+                />
+                <label for="flipCardRadio" class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="p-4">
+                      <p></p>
+                      <a
+                        href=""
+                        class="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+                        >Saiba Mais</a
+                      >
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <!-- <img
+                data-aos="fade-down"
+                src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                alt=""
+              /> --><img
+                data-aos="fade-left"
+                class=""
+                src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                alt=""
+              /><img
+                data-aos="fade-right"
+                class=""
+                src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                alt=""
+              /><img
+                data-aos="fade-up"
+                class=""
+                src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="mt-4">
+            <article
+              data-aos="zoom-in"
+              class="flex flex-col space-y-2 font-plus-jakarta-sans"
+            >
+              <p>
+                Somos uma equipe apaixonada e especializada em assessoria,
+                estratégias de marketing e comunicação, dedicada a revelar e
+                amplificar a alma de cada marca que representamos.
+              </p>
+              <p>
+                Nossa missão é ir além do convencional, mergulhando fundo nas
+                histórias, valores e visões únicas de nossos clientes, para
+                criar conexões autênticas e duradouras com seu público.
+              </p>
+              <p class="hidden">
+                Acreditamos que o verdadeiro poder do marketing reside em contar
+                histórias genuínas, trazendo a essência e destacando a sua
+                singularidade.
+              </p>
+              <p class="hidden">
+                Quem somos é um reflexo de nossa paixão por ajudar as marcas a
+                brilharem, e nossa dedicação em tornar cada história de marca
+                uma experiência memorável.
+              </p>
+              <p class="hidden">
+                Imagine um parceiro que mergulha fundo em sua marca,
+                compreendendo não apenas o que você faz, mas por que você faz.
+                Na D3 Assessoria, objetivo não está em volume e produção, de
+                posts prontos; criamos uma estratégia de comunicação com
+                ferramentas de marketing que é uma extensão de sua visão e
+                valores.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="quem-somos">
         <article>
-          <h2>Nossa Equipe</h2>
-          <p>
-            Conheça a equipe apaixonada da D3 Assessoria. Somos mais do que
-            especialistas em comunicação e marketing, somos contadores de
-            histórias, apaixonados por desvendar a alma de cada marca que
-            representamos.
-          </p>
+          <div
+            class="flex flex-col md:flex-row justify-between text-center mb-16"
+          >
+            <h2 class="text-2xl font-extrabold">Nossa Equipe</h2>
+            <p class="md:w-1/2">
+              Conheça a equipe apaixonada da D3 Assessoria. Somos mais do que
+              especialistas em comunicação e marketing, somos contadores de
+              histórias, apaixonados por desvendar a alma de cada marca que
+              representamos.
+            </p>
+          </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
               class="bg-white rounded-md mx-auto relative shadow-lg overflow-hidden border-8"
             >
-            <div class="absolute top-4 left-4">
-              <p class="text-xl font-bold">Pedro Tavares</p>
-              <p class="pl-3">Príncipe1 Herdeiro</p>
-              <hr class="mt-2 ml-6 w-16">
-            </div>
+              <div class="absolute top-4 left-4">
+                <p class="text-xl font-bold">Pedro Tavares</p>
+                <p class="pl-3">Príncipe1 Herdeiro</p>
+                <hr class="mt-2 ml-6 w-16" />
+              </div>
               <img src="https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg" alt="" />
               <ul class="absolute">
                 <li></li>
@@ -165,11 +259,11 @@
             <div
               class="bg-white rounded-md mx-auto relative shadow-lg overflow-hidden border-8"
             >
-            <div class="absolute top-4 left-4">
-              <p class="text-xl font-bold">Pikachu Tavares</p>
-              <p class="pl-3">Animador de torcida</p>
-              <hr class="mt-2 ml-6 w-16">
-            </div>
+              <div class="absolute top-4 left-4">
+                <p class="text-xl font-bold">Pikachu Tavares</p>
+                <p class="pl-3">Animador de torcida</p>
+                <hr class="mt-2 ml-6 w-16" />
+              </div>
               <img src="https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg" alt="" />
               <ul class="absolute">
                 <li></li>
@@ -178,11 +272,11 @@
             <div
               class="bg-white rounded-md mx-auto relative shadow-lg overflow-hidden border-8"
             >
-            <div class="absolute top-4 left-4">
-              <p class="text-xl font-bold">Deise Tavares</p>
-              <p class="pl-3">Dona da P***a toda</p>
-              <hr class="mt-2 ml-6 w-16">
-            </div>
+              <div class="absolute top-4 left-4">
+                <p class="text-xl font-bold">Deise Tavares</p>
+                <p class="pl-3">Dona da P***a toda</p>
+                <hr class="mt-2 ml-6 w-16" />
+              </div>
               <img src="https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg" alt="" />
               <ul class="absolute">
                 <li></li>
@@ -191,11 +285,11 @@
             <div
               class="bg-white rounded-md mx-auto relative shadow-lg overflow-hidden border-8"
             >
-            <div class="absolute top-4 left-4">
-              <p class="text-xl font-bold">Marcelleza</p>
-              <p class="pl-3">Solucionador de problemas</p>
-              <hr class="mt-2 ml-6 w-16">
-            </div>
+              <div class="absolute top-4 left-4">
+                <p class="text-xl font-bold">Marcelleza</p>
+                <p class="pl-3">Solucionador de problemas</p>
+                <hr class="mt-2 ml-6 w-16" />
+              </div>
               <img src="https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg" alt="" />
               <ul class="absolute">
                 <li></li>
