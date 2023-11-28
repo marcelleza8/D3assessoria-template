@@ -9,15 +9,29 @@ import "swiper/css/pagination";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { scrollToElement } from "./scrollWithHeaderOffset.js";
+
 const initApp = () => {
   const hamburgerBtn = document.getElementById("hamburger-button");
   const mobileMenu = document.getElementById("mobile-menu");
+  const headerHeight = document.querySelector("header").offsetHeight;
 
   const toggleMenu = () => {
     mobileMenu.classList.toggle("hidden");
     mobileMenu.classList.toggle("flex");
     hamburgerBtn.classList.toggle("toggle-btn");
   };
+
+  [...document.querySelectorAll("header nav>a")].map((el) => {
+    el.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      console.log(`#${el.href.replace(/(.+)?#/g, "")}`);
+      scrollToElement(
+        document.querySelector(`#${el.href.replace(/(.+)?#/g, "")}`),
+        headerHeight
+      );
+    });
+  });
 
   hamburgerBtn.addEventListener("click", toggleMenu);
   mobileMenu.addEventListener("click", toggleMenu);
@@ -45,24 +59,6 @@ const initApp = () => {
   });
   swiper.on("slideChange", () => {
     AOS.refresh();
-  });
-
-  const swiperServices = new Swiper(".swiper-container-services", {
-    // Módulos
-    modules: [Navigation, Pagination],
-    // Opções do Swiper
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    effect: "cube",
-    autoplay: {
-      delay: 500,
-    },
-    pagination: { el: ".swiper-pagination" },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
   });
 };
 

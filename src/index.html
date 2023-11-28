@@ -15,7 +15,7 @@
       <!-- HERO -->
       <section
         id="pagina-inicial"
-        class="banner widescreen:section-min-height tallscreen:section-min-height mb-12 pb-6 mx-auto bg-white"
+        class="banner widescreen:section-min-height tallscreen:section-min-height mx-auto bg-white pt-5"
       >
         <div class="relative overflow-hidden w-full">
           <div class="swiper-container">
@@ -71,14 +71,14 @@
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div class="relative">
             <div class="grid grid-cols-4 md:grid-cols-2">
-              {{> sobre-nos-peca imageUrl='./fotos/FOTOS-PROFISSIONAIS-IIII.jpg'
+              <!-- {{> sobre-nos-peca imageUrl='./fotos/FOTOS-PROFISSIONAIS-IIII.jpg'
               imageAlt=this.imageAlt text=this.text
-              moreInfoUrl=this.moreInfoUrl}}
-              <!-- <img
+              moreInfoUrl=this.moreInfoUrl}} -->
+              <img
                 data-aos="fade-down"
                 src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
                 alt=""
-              /> --><img
+              /><img
                 data-aos="fade-left"
                 class=""
                 src="./fotos/aline-tonolli-peca.jpeg"
@@ -184,36 +184,38 @@
       <!-- /HERO -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
       <!-- SERVIÇOS -->
-      <section id="servicos">
+      <section
+        id="servicos"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
           Serviços
         </h2>
-        <div class="swiper-container-services overflow-hidden">
-          <div class="swiper-wrapper">
-            {{#each servicos}}
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                {{this.titulo}}
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >{{this.texto}}</span
-              >
-            </div>
-            {{/each}}
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+        <ul
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-none"
+        >
+          {{#each servicos}}
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              {{this.titulo}}
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >{{this.texto}}</span
+            >
+          </li>
+          {{/each}}
+        </ul>
       </section>
       <!-- /SERVIÇOS -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
-
+      <!-- PARCEIROS -->
       <section
         id="parceiros"
         class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
