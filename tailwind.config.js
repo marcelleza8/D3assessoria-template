@@ -3,6 +3,10 @@ export default {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
+      fontFamily: {
+        "plus-jakarta-sans": ["Plus Jakarta Sans", "sans-serif"],
+        urbanist: ["Urbanist", "sans-serif"],
+      },
       colors: {
         rouge: {
           50: "#fbf4f8",
@@ -30,6 +34,7 @@ export default {
           900: "#3d3d3d",
           950: "#262626",
         },
+        primary: "#05F",
       },
       screens: {
         widescreen: { raw: "(min-aspect-ratio: 3/2)" },
