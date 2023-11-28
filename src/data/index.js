@@ -105,19 +105,19 @@ export default {
       {
         imagem:
           "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
-        nome: "Pedro Tavares",
+        nome: "Pedro Antunes",
         cargo: "Príncipe1 Herdeiro",
       },
       {
         imagem:
           "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
-        nome: "Pikachu Tavares",
+        nome: "Pikachu Antunes",
         cargo: "Animador de torcida",
       },
       {
         imagem:
           "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
-        nome: "Deise Tavares",
+        nome: "Deise Antunes",
         cargo: "Dona da P***a toda",
       },
       {
