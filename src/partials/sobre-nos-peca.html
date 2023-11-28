@@ -1,0 +1,27 @@
+<div class="flip-card">
+  <input
+    type="radio"
+    id="flipCardRadio{{@index}}"
+    name="flipCardRadio"
+    class="hidden flip-card-trigger"
+  />
+  <label for="flipCardRadio{{@index}}" class="flip-card-inner">
+    <div class="flip-card-front">
+      <img
+        src="{{imageUrl}}"
+        alt="{{imageAlt}}"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div class="flip-card-back">
+      <div class="p-4">
+        <p>{{text}}</p>
+        <a
+          href="{{moreInfoUrl}}"
+          class="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+          >Saiba Mais</a
+        >
+      </div>
+    </div>
+  </label>
+</div>
