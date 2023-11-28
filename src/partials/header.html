@@ -1,7 +1,7 @@
 <header class="sticky top-0 z-10 bg-[#ffd0be] text-white">
   <section class="banner mx-auto flex items-center justify-between p-4">
     <h1 class="text-3xl font-medium">
-      <a href="#pagina-inicial">
+      <a class="scrollTo" href="#pagina-inicial">
         <div>
           <h1 class="text-[#6a4a79] uppercase font-bold text-xl">
             D3 Assessoria em comunicação
@@ -27,7 +27,9 @@
         aria-label="main"
       >
         {{#each menu}}
-        <a href="{{this.url}}" class="hover:opacity-90">{{ this.label }}</a>
+        <a href="{{this.url}}" class="scrollTo hover:opacity-90"
+          >{{ this.label }}</a
+        >
         {{/each}}
       </nav>
     </div>

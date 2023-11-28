@@ -22,7 +22,7 @@ const initApp = () => {
     hamburgerBtn.classList.toggle("toggle-btn");
   };
 
-  [...document.querySelectorAll("header nav>a")].map((el) => {
+  [...document.querySelectorAll(".scrollTo")].map((el) => {
     el.addEventListener("click", (ev) => {
       ev.preventDefault();
       console.log(`#${el.href.replace(/(.+)?#/g, "")}`);
