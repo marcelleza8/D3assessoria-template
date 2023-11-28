@@ -105,26 +105,26 @@ export default {
       {
         imagem:
           "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
-        nome: "Pedro Antunes",
-        cargo: "Príncipe1 Herdeiro",
-      },
-      {
-        imagem:
-          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
-        nome: "Pikachu Antunes",
-        cargo: "Animador de torcida",
-      },
-      {
-        imagem:
-          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
         nome: "Deise Antunes",
-        cargo: "Dona da P***a toda",
+        cargo: "Cargo",
+      },
+      {
+        imagem:
+          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        nome: "Aline Tonioli",
+        cargo: "Cargo",
+      },
+      {
+        imagem:
+          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        nome: "Estéfani",
+        cargo: "Cargo",
       },
       {
         imagem:
           "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
         nome: "Marcelleza",
-        cargo: "Solucionador de problemas",
+        cargo: "Cargo",
       },
     ],
     site_year: new Date().getFullYear(),

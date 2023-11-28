@@ -45,5 +45,5 @@ export default defineConfig({
   css: {
     postcss: "./postcss.config.js",
   },
-  // base: "/D3assessoria-template/",
+  base: "/D3assessoria-template/",
 });
