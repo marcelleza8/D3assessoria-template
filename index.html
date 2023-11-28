@@ -7,15 +7,15 @@
     <title>D3 ASSESSORIA  DE COMUNICAÇÃO – Comunicando Valores, Construindo Negócios</title>
     
     
-    <script type="module" crossorigin src="/D3assessoria-template/assets/main-61b3a094.js"></script>
-    <link rel="stylesheet" href="/D3assessoria-template/assets/index-853139b6.css">
+    <script type="module" crossorigin src="/assets/main-11b805b8.js"></script>
+    <link rel="stylesheet" href="/assets/index-89bf1e87.css">
   </head>
 
   <body class="min-h-screen bg-white dark:bg-[#a2416c] dark:text-white">
     <header class="sticky top-0 z-10 bg-[#ffd0be] text-white">
       <section class="banner mx-auto flex items-center justify-between p-4">
         <h1 class="text-3xl font-medium">
-          <a href="#pagina-inicial">
+          <a class="scrollTo" href="#pagina-inicial">
             <div>
               <h1 class="text-[#6a4a79] uppercase font-bold text-xl">
                 D3 Assessoria em comunicação
@@ -40,10 +40,18 @@
             class="hidden space-x-8 text-xl md:block text-dove-gray-500"
             aria-label="main"
           >
-            <a href="#quem-somos" class="hover:opacity-90">Quem somos</a>
-            <a href="#servicos" class="hover:opacity-90">Serviços</a>
-            <a href="#parceiros" class="hover:opacity-90">Parceiros</a>
-            <a href="#entre-em-contato" class="hover:opacity-90">Entre em contato</a>
+            <a href="#quem-somos" class="scrollTo hover:opacity-90"
+              >Quem somos</a
+            >
+            <a href="#servicos" class="scrollTo hover:opacity-90"
+              >Serviços</a
+            >
+            <a href="#parceiros" class="scrollTo hover:opacity-90"
+              >Parceiros</a
+            >
+            <a href="#entre-em-contato" class="scrollTo hover:opacity-90"
+              >Entre em contato</a
+            >
           </nav>
         </div>
       </section>
@@ -78,10 +86,7 @@
     </header>
     <main>
       <!-- HERO -->
-      <section
-        id="pagina-inicial"
-        class="banner widescreen:section-min-height tallscreen:section-min-height mb-12 pb-6 mx-auto bg-white"
-      >
+      <section id="pagina-inicial" class="banner mx-auto bg-white pt-0">
         <div class="relative overflow-hidden w-full">
           <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -123,7 +128,7 @@
             Pense D3 Assessoria.
           </p>
         </article>
-        <img class="w-1/2 hidden" src="/D3assessoria-template/Logo-Deise.png" alt="Rocket Dab" />
+        <img class="w-1/2 hidden" src="/Logo-Deise.png" alt="Rocket Dab" />
       </section>
       <!-- Quem somos -->
       <section id="quem-somos">
@@ -136,38 +141,39 @@
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div class="relative">
             <div class="grid grid-cols-4 md:grid-cols-2">
-              <div class="flip-card">
-                <input
-                  type="radio"
-                  id="flipCardRadio"
-                  name="flipCardRadio"
-                  class="hidden flip-card-trigger"
-                />
-                <label for="flipCardRadio" class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
-                      alt=""
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="flip-card-back">
-                    <div class="p-4">
-                      <p></p>
-                      <a
-                        href=""
-                        class="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
-                        >Saiba Mais</a
-                      >
-                    </div>
-                  </div>
-                </label>
-              </div>
-              <!-- <img
+              <!-- <div class="flip-card">
+  <input
+    type="radio"
+    id="flipCardRadio"
+    name="flipCardRadio"
+    class="hidden flip-card-trigger"
+  />
+  <label for="flipCardRadio" class="flip-card-inner">
+    <div class="flip-card-front">
+      <img
+        src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
+        alt=""
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div class="flip-card-back">
+      <div class="p-4">
+        <p></p>
+        <a
+          href=""
+          class="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+          >Saiba Mais</a
+        >
+      </div>
+    </div>
+  </label>
+</div>
+ -->
+              <img
                 data-aos="fade-down"
                 src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
                 alt=""
-              /> --><img
+              /><img
                 data-aos="fade-left"
                 class=""
                 src="./fotos/aline-tonolli-peca.jpeg"
@@ -310,130 +316,140 @@
       <!-- /HERO -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
       <!-- SERVIÇOS -->
-      <section id="servicos">
+      <section
+        id="servicos"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
           Serviços
         </h2>
-        <div class="swiper-container-services overflow-hidden">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Assessoria de Imprensa
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Nosso serviço de Assessoria de Imprensa garante que sua empresa ganhe visibilidade na mídia e alcance seu público-alvo. Estabelecemos relações sólidas com jornalistas e veículos de comunicação. Botão - Agende agora</span
-              >
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Gestão de Mídias Sociais
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Com a Gestão de Mídias Sociais, sua marca ganha vida nas redes. Criamos e gerenciamos suas contas, garantindo interação constante com seu público.Botão - Agende agora Desenvolvimento de Identidade VisualDesenvolvemos Identidades Visuais marcantes. Sua marca será lembrada e reconhecida em qualquer lugar.Botão - Agende agora</span
-              >
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Monitoramento e Análise de Mídia
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Com o Monitoramento e Análise de Mídia, ficamos de olho em tudo o que é dito sobre sua empresa. Uma gestão de imagem eficaz começa por aqui.Botão - Agende agora</span
-              >
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Criação e desenvolvimento de sites
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Criamos e desenvolvemos sites funcionais e atraentes. Sua presença online será forte e impactante.Botão - Agende agora</span
-              >
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Produção Audiovisual
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Nossa produção audiovisual conta histórias que emocionam e envolvem. Vídeos, vinhetas, filmes corporativos e muito mais.Botão - Agende agora</span
-              >
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Configuração e gerenciamento de campanhas 
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Configuramos e gerenciamos campanhas publicitárias online. De Google Ads a Facebook Ads, sabemos como fazer sua marca brilhar.Botão - Agende agora</span
-              >
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Estudo de mercado
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Realizamos Estudos de MercadoIdentificando oportunidades e ameaças. Sua empresa sempre um passo à frente.Botão - Agende agora</span
-              >
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Estudo de persona
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Fazemos o Estudo de Persona para entender melhor seu público. Comunicação personalizada e efetiva é o nosso forte.Botão - Agende agora Treinamento de prospecçãoOferecemos Treinamento de Prospecção, aprimorando suas estratégias de captação de clientes. Mais leads, mais negócios.Botão - Agende agora</span
-              >
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <h3
-                class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
-              >
-                Treinamento de vendas
-              </h3>
-              <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
-              <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
-                >Nosso Treinamento de Vendas transforma seu time em verdadeiros campeões. Vender se torna uma arte.Botão - Agende agora Fotos Corporativas de ImpactoNa D3 Assessoria, capturamos a essência única de sua marca e equipe por meio de fotos corporativas de impacto. Nossa fotógrafa especializada e apaixonados por contar histórias autênticas e transmitir sua missão com arte, por meio de imagens que criam uma conexão transforadora. Escolha nossos serviços de fotos corporativas e destaque-se no mercado com imagens que conectem com seu público. Juntos, revelamos o coração de sua marca em cada foto.</span
-              >
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+        <ul
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-none"
+        >
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Assessoria de Imprensa
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Nosso serviço de Assessoria de Imprensa garante que sua empresa ganhe visibilidade na mídia e alcance seu público-alvo. Estabelecemos relações sólidas com jornalistas e veículos de comunicação. Botão - Agende agora</span
+            >
+          </li>
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Gestão de Mídias Sociais
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Com a Gestão de Mídias Sociais, sua marca ganha vida nas redes. Criamos e gerenciamos suas contas, garantindo interação constante com seu público.Botão - Agende agora Desenvolvimento de Identidade VisualDesenvolvemos Identidades Visuais marcantes. Sua marca será lembrada e reconhecida em qualquer lugar.Botão - Agende agora</span
+            >
+          </li>
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Monitoramento e Análise de Mídia
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Com o Monitoramento e Análise de Mídia, ficamos de olho em tudo o que é dito sobre sua empresa. Uma gestão de imagem eficaz começa por aqui.Botão - Agende agora</span
+            >
+          </li>
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Criação e desenvolvimento de sites
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Criamos e desenvolvemos sites funcionais e atraentes. Sua presença online será forte e impactante.Botão - Agende agora</span
+            >
+          </li>
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Produção Audiovisual
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Nossa produção audiovisual conta histórias que emocionam e envolvem. Vídeos, vinhetas, filmes corporativos e muito mais.Botão - Agende agora</span
+            >
+          </li>
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Configuração e gerenciamento de campanhas 
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Configuramos e gerenciamos campanhas publicitárias online. De Google Ads a Facebook Ads, sabemos como fazer sua marca brilhar.Botão - Agende agora</span
+            >
+          </li>
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Estudo de mercado
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Realizamos Estudos de MercadoIdentificando oportunidades e ameaças. Sua empresa sempre um passo à frente.Botão - Agende agora</span
+            >
+          </li>
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Estudo de persona
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Fazemos o Estudo de Persona para entender melhor seu público. Comunicação personalizada e efetiva é o nosso forte.Botão - Agende agora Treinamento de prospecçãoOferecemos Treinamento de Prospecção, aprimorando suas estratégias de captação de clientes. Mais leads, mais negócios.Botão - Agende agora</span
+            >
+          </li>
+          <li
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+          >
+            <h3
+              class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
+            >
+              Treinamento de vendas
+            </h3>
+            <!-- <img src="" alt="Explorer" class="mb-6 w-1/2" /> -->
+            <span class="text-xs mt-4 dark:text-dove-gray-900 text-justify"
+              >Nosso Treinamento de Vendas transforma seu time em verdadeiros campeões. Vender se torna uma arte.Botão - Agende agora Fotos Corporativas de ImpactoNa D3 Assessoria, capturamos a essência única de sua marca e equipe por meio de fotos corporativas de impacto. Nossa fotógrafa especializada e apaixonados por contar histórias autênticas e transmitir sua missão com arte, por meio de imagens que criam uma conexão transforadora. Escolha nossos serviços de fotos corporativas e destaque-se no mercado com imagens que conectem com seu público. Juntos, revelamos o coração de sua marca em cada foto.</span
+            >
+          </li>
+        </ul>
       </section>
       <!-- /SERVIÇOS -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
-
+      <!-- PARCEIROS -->
       <section
         id="parceiros"
         class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
