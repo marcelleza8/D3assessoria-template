@@ -15,15 +15,14 @@
       <!-- HERO -->
       <section
         id="pagina-inicial"
-        class="widescreen:section-min-height tallscreen:section-min-height mb-12 pb-6 mx-auto bg-green-400"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 pb-6 mx-auto bg-white"
       >
         <div class="relative overflow-hidden w-full">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide bg-purple-400">
+              <div class="swiper-slide">
                 <img src="./banner001.jpg" />
-                <div class="absolute bottom-20 right-20 text-3xl"></div>
               </div>
               <div class="swiper-slide">
                 <img src="./6c4e3bc9-0494-4ba1-8402-f798a1e5670b.webp" />
@@ -66,21 +65,26 @@
         id="quem-somos"
         class="widescreen:section-min-height tallscreen:section-min-height scroll-mt-40 space-y-4 p-4 m-2 bg-gray-200 max-w-4xl mx-auto"
       >
-        <h1
+        <span
           title="título da seção quem somos"
-          class="text-center text-3xl fold-extrabold"
-          data-aos="fade-left"
+          class="text-center text-sm bg-indigo-200 text-primary inline-block px-3 py-1 font-plus-jakarta-sans font-extrabold rounded-full"
         >
-          Quem somos
-        </h1>
+          Sobre a D3 Assessoria
+        </span>
+        <h2 data-aos="zoom-in" class="font-extrabold text-2xl font-urbanist">
+          Conectando Almas, Contando Histórias, Elevando Marcas
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="relative">
             <div class="grid grid-cols-4 md:grid-cols-2">
-              <img
+              {{> sobre-nos-peca imageUrl='./fotos/FOTOS-PROFISSIONAIS-IIII.jpg'
+              imageAlt=this.imageAlt text=this.text
+              moreInfoUrl=this.moreInfoUrl}}
+              <!-- <img
                 data-aos="fade-down"
                 src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
                 alt=""
-              /><img
+              /> --><img
                 data-aos="fade-left"
                 class=""
                 src="./fotos/FOTOS-PROFISSIONAIS-IIII.jpg"
@@ -98,11 +102,11 @@
               />
             </div>
           </div>
-          <div class="pl-8">
-            <h2 data-aos="zoom-in">
-              Conectando Almas, Contando Histórias, Elevando Marcas
-            </h2>
-            <article data-aos="zoom-in" class="flex flex-col space-y-2">
+          <div class="mt-4">
+            <article
+              data-aos="zoom-in"
+              class="flex flex-col space-y-2 font-plus-jakarta-sans"
+            >
               <p>
                 Somos uma equipe apaixonada e especializada em assessoria,
                 estratégias de marketing e comunicação, dedicada a revelar e
