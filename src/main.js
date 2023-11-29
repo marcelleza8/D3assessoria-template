@@ -25,7 +25,6 @@ const initApp = () => {
   [...document.querySelectorAll(".scrollTo")].map((el) => {
     el.addEventListener("click", (ev) => {
       ev.preventDefault();
-      console.log(`#${el.href.replace(/(.+)?#/g, "")}`);
       scrollToElement(
         document.querySelector(`#${el.href.replace(/(.+)?#/g, "")}`),
         headerHeight

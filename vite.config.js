@@ -38,7 +38,6 @@ export default ({ mode }) => {
         helpers: {
           or: (v1, v2) => v1 || v2,
           isTrue: (v) => {
-            console.log(v);
             return v !== undefined && v;
           },
           isActiveOrUndefined: (value) => value === undefined || value,
@@ -51,5 +50,3 @@ export default ({ mode }) => {
     base: process.env.VITE_BASE_URL,
   });
 };
-
-console.log(import.meta.env);
