@@ -58,14 +58,11 @@
         </article>
         <img class="w-1/2 hidden" src="/Logo-Deise.png" alt="Rocket Dab" />
       </section>
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
       <!-- Quem somos -->
       <section id="quem-somos">
-        <span
-          title="título da seção quem somos"
-          class="text-center text-sm bg-indigo-200 text-primary inline-block px-3 py-1 font-plus-jakarta-sans font-extrabold rounded-full"
-        >
-          Sobre a D3 Assessoria
-        </span>
+        {{> section-header title="título da seção quem somos" text="Sobre a D3
+        Assessoria"}}
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div class="relative">
             <div class="grid grid-cols-4 md:grid-cols-2">
@@ -146,12 +143,13 @@
           </div>
         </div>
       </section>
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+      <!-- EQUIPE -->
       <section id="nossa-equipe">
+        {{> section-header title="título da seção nossa equipe" text="Nossa
+        Equipe"}}
         <article>
-          <div
-            class="flex flex-col md:flex-row justify-between text-center mb-16"
-          >
-            <h2 class="text-2xl font-extrabold">Nossa Equipe</h2>
+          <div class="flex flex-col md:flex-row justify-between mb-16">
             <p class="md:w-1/2">
               Conheça a equipe apaixonada da D3 Assessoria. Somos mais do que
               especialistas em comunicação e marketing, somos contadores de
@@ -162,7 +160,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {{#each equipe}}
             <div
-              class="bg-white rounded-md mx-auto relative shadow-lg overflow-hidden border-8"
+              class="bg-white rounded-md mx-auto relative shadow-lg overflow-hidden border-8 w-72"
             >
               <div class="absolute top-4 left-4">
                 <p class="text-xl font-bold">{{this.nome}}</p>
@@ -182,21 +180,23 @@
       <!-- /HERO -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
       <!-- SERVIÇOS -->
-      <section
-        id="servicos"
-        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
-      >
-        <h2
-          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
-        >
-          Serviços
-        </h2>
+      <section id="servicos">
+        {{> section-header title="título da seção serviços" text="Serviços"}}
+        <div class="flex flex-col md:flex-row justify-between mb-16">
+          <p class="md:w-1/2">
+            Na D3 Assessoria de Comunicação, transformamos sua presença no
+            mercado com uma gama completa de serviços personalizados. Da
+            assessoria de imprensa à gestão de mídias sociais, passando por
+            produção audiovisual e desenvolvimento de sites, oferecemos soluções
+            inovadoras para elevar sua marca.
+          </p>
+        </div>
         <ul
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-none"
         >
           {{#each servicos}}
           <li
-            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-rouge-400 sm:w-5/6"
+            class="mx-auto flex col-span-1 flex-col items-center rounded-3xl border border-solid bg-white py-6 px-3 w-4/6 shadow-md dark:border-gray-100 md:w-72 dark:bg-rouge-400"
           >
             <h3
               class="text-center text-lg text-slate-900 dark:text-dove-gray-900"
@@ -211,15 +211,10 @@
           {{/each}}
         </ul>
       </section>
-      <!-- /SERVIÇOS -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
       <!-- PARCEIROS -->
       <section id="parceiros">
-        <h2
-          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
-        >
-          Parceiros
-        </h2>
+        {{> section-header title="título da seção parceiros" text="Parceiros"}}
         <h3>
           Cada perceria reflete uma conquista única em nossa jornada de conectar
           marcas à sua essência. Os depoimentos são testemunhos vivos de
@@ -249,15 +244,9 @@
 
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section
-        id="entre-em-contato"
-        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6"
-      >
-        <h2
-          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
-        >
-          Entre em contato
-        </h2>
+      <section id="entre-em-contato">
+        {{> section-header title="título da seção entre em contato" text="Entre
+        em contato"}}
         <form
           action=""
           class="items-left mx-auto flex max-w-4xl flex-col gap-4"
