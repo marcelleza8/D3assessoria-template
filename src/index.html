@@ -214,10 +214,7 @@
       <!-- /SERVIÇOS -->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
       <!-- PARCEIROS -->
-      <section
-        id="parceiros"
-        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
-      >
+      <section id="parceiros">
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
@@ -228,20 +225,20 @@
           marcas à sua essência. Os depoimentos são testemunhos vivos de
           transformações e sucessos compartilhados.
         </h3>
-        <div class="grid grid-cols-3 gap-8">
+        <div class="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {{#each depoimentos}}
-          <figure class="my-12">
+          <figure>
             <blockquote
-              class="relative rounded-3xl bg-teal-600 p-8 dark:bg-black"
+              class="relative rounded-3xl bg-[#ec5a6f]/30 p-8 dark:bg-black"
             >
               <p
-                class="text-left text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-6xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:bottom-[-1rem] after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-6xl after:text-white after:opacity-25 after:content-['\201D']"
+                class="text-left text-black/80 before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-6xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:bottom-[-1rem] after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-6xl after:text-white after:opacity-25 after:content-['\201D']"
               >
                 {{this.texto}}
               </p>
             </blockquote>
             <figcaption
-              class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+              class="mt-2 text-right text-2xl italic text-slate-500 dark:text-slate-400 sm:text-xl"
             >
               &#8212;{{this.titulo}}
             </figcaption>
