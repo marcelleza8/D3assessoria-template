@@ -48,7 +48,7 @@ export default {
           "Com o Monitoramento e Análise de Mídia, ficamos de olho em tudo o que é dito sobre sua empresa. Uma gestão de imagem eficaz começa por aqui.Botão - Agende agora",
       },
       {
-        titulo: "Criação e desenvolvimento de sites",
+        titulo: "Presença digital",
         imagem: "",
         texto:
           "Criamos e desenvolvemos sites funcionais e atraentes. Sua presença online será forte e impactante.Botão - Agende agora",
@@ -60,7 +60,7 @@ export default {
           "Nossa produção audiovisual conta histórias que emocionam e envolvem. Vídeos, vinhetas, filmes corporativos e muito mais.Botão - Agende agora",
       },
       {
-        titulo: "Configuração e gerenciamento de campanhas ",
+        titulo: "Gerenciamento de campanhas ",
         imagem: "",
         texto:
           "Configuramos e gerenciamos campanhas publicitárias online. De Google Ads a Facebook Ads, sabemos como fazer sua marca brilhar.Botão - Agende agora",
