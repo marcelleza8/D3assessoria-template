@@ -103,26 +103,24 @@ export default {
     ],
     equipe: [
       {
-        imagem:
-          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        imagem: "./fotos/FOTOS-PROFISSIONAIS-IIII-canva.png",
         nome: "Deise Antunes",
         cargo: "Cargo",
       },
       {
-        imagem:
-          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        imagem: "./fotos/aline-tonolli-peca-canva.png",
         nome: "Aline Tonioli",
         cargo: "Cargo",
       },
       {
-        imagem:
-          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+        imagem: "./fotos/estephany-peca-canva.png",
         nome: "Estéfani",
         cargo: "Cargo",
       },
       {
         imagem:
-          "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+          // "https://themeadapt.com/tf/gerow/assets/img/team/h2_team_img04.jpg",
+          "./fotos/FOTOS-PROFISSIONAIS-IIII-canva.png",
         nome: "Marcelleza",
         cargo: "Cargo",
       },
