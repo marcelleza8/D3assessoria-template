@@ -1,0 +1,32 @@
+<section id="entre-em-contato">
+  {{> section-header title="título da seção entre em contato" text="Entre em
+  contato"}}
+  <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4">
+    <label for="subject">Assunto:</label>
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      required
+      minlength="3"
+      maxlength="60"
+      placeholder="Assunto"
+      class="w-full rounded-xl border border-solid border-slate-900 p-3 text-black dark:border-none"
+    />
+    <label for="message">Mensagem:</label>
+    <textarea
+      name="message"
+      id="message"
+      cols="30"
+      rows="10"
+      placeholder="Mensagem"
+      required
+      class="w-full rounded-xl border border-solid border-slate-900 p-3 text-black dark:border-none"
+    ></textarea>
+    <button
+      class="w-full md:w-36 rounded-xl border border-solid text-xl border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none"
+    >
+      Enviar
+    </button>
+  </form>
+</section>
