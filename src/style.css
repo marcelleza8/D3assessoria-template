@@ -54,3 +54,13 @@ main > section:not(.banner) {
 .swiper-slide img {
   @apply block mx-auto;
 }
+
+.servicos-item {
+  /* Configurações iniciais do background */
+  background-size: 100%; /* Tamanho inicial do fundo (sem zoom) */
+  transition: background-size 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+/* Efeito de hover */
+.servicos-item:hover {
+  background-size: 120%; /* Aumenta o tamanho do fundo para criar o efeito de zoom */
+}

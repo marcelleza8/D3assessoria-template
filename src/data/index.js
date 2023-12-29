@@ -31,57 +31,98 @@ export default {
     ],
     servicos: [
       {
-        titulo: "Assessoria de Imprensa",
-        texto:
-          "Nosso serviço de Assessoria de Imprensa garante que sua empresa ganhe visibilidade na mídia e alcance seu público-alvo. Estabelecemos relações sólidas com jornalistas e veículos de comunicação. Botão - Agende agora",
+        titulo: "Estrat\u00e9gias de Comunica\u00e7\u00e3o e Marketing",
+        bgImage: "./servicos/estrategia-comunicacao-marketing.png",
+        servicos: [
+          {
+            titulo: "Assessoria de Imprensa",
+            texto: "Maximizando a visibilidade e o alcance na m\u00eddia.",
+          },
+          {
+            titulo: "Gest\u00e3o de M\u00eddias Sociais",
+            texto:
+              "Gerenciamento din\u00e2mico e criativo de presen\u00e7a nas redes sociais.",
+          },
+          {
+            titulo: "Desenvolvimento de Identidade Visual",
+            texto:
+              "Cria\u00e7\u00e3o de identidades visuais que ressoam e marcam presen\u00e7a.",
+          },
+          {
+            titulo: "Cria\u00e7\u00e3o e Desenvolvimento de Sites",
+            texto:
+              "Constru\u00e7\u00e3o de sites funcionais e atraentes para fortalecer a presen\u00e7a online.",
+          },
+          {
+            titulo: "Configura\u00e7\u00e3o e Gerenciamento de Campanhas",
+            texto:
+              "Estrat\u00e9gias eficazes de publicidade online incluindo Google Ads e Facebook Ads.",
+          },
+        ],
       },
       {
-        titulo: "Gestão de Mídias Sociais",
-        imagem: "",
-        texto:
-          "Com a Gestão de Mídias Sociais, sua marca ganha vida nas redes. Criamos e gerenciamos suas contas, garantindo interação constante com seu público.Botão - Agende agora Desenvolvimento de Identidade VisualDesenvolvemos Identidades Visuais marcantes. Sua marca será lembrada e reconhecida em qualquer lugar.Botão - Agende agora",
+        titulo: "Produ\u00e7\u00e3o de Conte\u00fado e M\u00eddia",
+        bgImage: "./servicos/producao-conteudo-midia.png",
+        servicos: [
+          {
+            titulo: "Produ\u00e7\u00e3o Audiovisual",
+            texto:
+              "Cria\u00e7\u00e3o de conte\u00fado audiovisual impactante incluindo v\u00eddeos e filmes corporativos.",
+          },
+          {
+            titulo: "Fotos Corporativas de Impacto",
+            texto:
+              "Servi\u00e7o fotogr\u00e1fico especializado para capturar a ess\u00eancia da marca e da equipe.",
+          },
+        ],
       },
       {
-        titulo: "Monitoramento e Análise de Mídia",
-        imagem: "",
-        texto:
-          "Com o Monitoramento e Análise de Mídia, ficamos de olho em tudo o que é dito sobre sua empresa. Uma gestão de imagem eficaz começa por aqui.Botão - Agende agora",
+        titulo: "An\u00e1lise e Intelig\u00eancia de Mercado",
+        bgImage: "./servicos/analise-inteligencia-mercado.png",
+        servicos: [
+          {
+            titulo: "Monitoramento e An\u00e1lise de M\u00eddia",
+            texto:
+              "Observa\u00e7\u00e3o e an\u00e1lise cont\u00ednua da representa\u00e7\u00e3o da marca na m\u00eddia.",
+          },
+          {
+            titulo: "Estudo de Mercado",
+            texto:
+              "Pesquisa e an\u00e1lise para identificar oportunidades e amea\u00e7as no mercado.",
+          },
+          {
+            titulo: "Estudo de Persona",
+            texto:
+              "Desenvolvimento de perfis detalhados do p\u00fablico-alvo para comunica\u00e7\u00e3o mais eficaz.",
+          },
+        ],
       },
       {
-        titulo: "Presença digital",
-        imagem: "",
-        texto:
-          "Criamos e desenvolvemos sites funcionais e atraentes. Sua presença online será forte e impactante.Botão - Agende agora",
-      },
-      {
-        titulo: "Produção Audiovisual",
-        imagem: "",
-        texto:
-          "Nossa produção audiovisual conta histórias que emocionam e envolvem. Vídeos, vinhetas, filmes corporativos e muito mais.Botão - Agende agora",
-      },
-      {
-        titulo: "Gerenciamento de campanhas ",
-        imagem: "",
-        texto:
-          "Configuramos e gerenciamos campanhas publicitárias online. De Google Ads a Facebook Ads, sabemos como fazer sua marca brilhar.Botão - Agende agora",
-      },
-      {
-        titulo: "Estudo de mercado",
-        imagem: "",
-        texto:
-          "Realizamos Estudos de MercadoIdentificando oportunidades e ameaças. Sua empresa sempre um passo à frente.Botão - Agende agora",
-      },
-      {
-        titulo: "Estudo de persona",
-        imagem: "",
-        texto:
-          "Fazemos o Estudo de Persona para entender melhor seu público. Comunicação personalizada e efetiva é o nosso forte.Botão - Agende agora Treinamento de prospecçãoOferecemos Treinamento de Prospecção, aprimorando suas estratégias de captação de clientes. Mais leads, mais negócios.Botão - Agende agora",
-      },
-      {
-        titulo: "Treinamento de vendas",
-        imagem: "",
-        texto:
-          "Nosso Treinamento de Vendas transforma seu time em verdadeiros campeões. Vender se torna uma arte.Botão - Agende agora Fotos Corporativas de ImpactoNa D3 Assessoria, capturamos a essência única de sua marca e equipe por meio de fotos corporativas de impacto. Nossa fotógrafa especializada e apaixonados por contar histórias autênticas e transmitir sua missão com arte, por meio de imagens que criam uma conexão transforadora. Escolha nossos serviços de fotos corporativas e destaque-se no mercado com imagens que conectem com seu público. Juntos, revelamos o coração de sua marca em cada foto.",
+        titulo: "Treinamento e Desenvolvimento",
+        bgImage: "./servicos/treinamento-e-desenvolvimento.png",
+        servicos: [
+          {
+            titulo: "Media Training",
+            texto:
+              "Prepara\u00e7\u00e3o e treinamento para intera\u00e7\u00f5es eficazes com a m\u00eddia.",
+          },
+          {
+            titulo:
+              "Treinamento de Figuras P\u00fablicas para Relacionamento com a Imprensa",
+            texto:
+              "Especializa\u00e7\u00e3o em capacitar indiv\u00edduos para lidar com a imprensa.",
+          },
+          {
+            titulo: "Treinamento de Prospec\u00e7\u00e3o",
+            texto:
+              "Aprimoramento de estrat\u00e9gias para atra\u00e7\u00e3o de clientes.",
+          },
+          {
+            titulo: "Treinamento de Vendas",
+            texto:
+              "Desenvolvimento de habilidades de venda transformando equipes em especialistas em vendas.",
+          },
+        ],
       },
     ],
     depoimentos: [
