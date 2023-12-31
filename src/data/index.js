@@ -32,6 +32,7 @@ export default {
     servicos: [
       {
         titulo: "Estrat\u00e9gias de Comunica\u00e7\u00e3o e Marketing",
+        url: "/servicos/estrategia-comunicacao-marketing",
         bgImage: "./servicos/estrategia-comunicacao-marketing.png",
         servicos: [
           {
@@ -62,6 +63,7 @@ export default {
       },
       {
         titulo: "Produ\u00e7\u00e3o de Conte\u00fado e M\u00eddia",
+        url: "/servicos/producao-conteudo-midia",
         bgImage: "./servicos/producao-conteudo-midia.png",
         servicos: [
           {
@@ -78,6 +80,7 @@ export default {
       },
       {
         titulo: "An\u00e1lise e Intelig\u00eancia de Mercado",
+        url: "/servicos/analise-inteligencia-mercado",
         bgImage: "./servicos/analise-inteligencia-mercado.png",
         servicos: [
           {
@@ -99,6 +102,7 @@ export default {
       },
       {
         titulo: "Treinamento e Desenvolvimento",
+        url: "/servicos/treinamento-e-desenvolvimento",
         bgImage: "./servicos/treinamento-e-desenvolvimento.png",
         servicos: [
           {

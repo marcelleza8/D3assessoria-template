@@ -9,18 +9,27 @@
       marca.
     </p>
   </div>
-  <ul class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 list-none">
+  <ul
+    class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 list-none servicos-lista"
+  >
     {{#each servicos}}
     <li
-      class="mx-auto flex flex-col rounded-3xl py-6 px-3 space-y-2 shadow-md w-3/4 md:w-5/6 lg:w-5/6 h-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 servicos-item"
+      class="cursor-default mx-auto flex flex-col rounded-3xl py-6 px-3 space-y-2 shadow-md w-full md:w-5/6 lg:w-5/6 h-full bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 servicos-item"
       style="background-image: url('{{this.bgImage}}');"
     >
-      <h3 class="text-center font-bold text-[#1f1917]">{{this.titulo}}</h3>
+      <a href="{{this.url}}">
+        <h3
+          class="text-center select-none cursor-default font-bold text-[#1f1917]"
+        >
+          {{this.titulo}}
+        </h3>
 
-      {{#each this.servicos }}
-      <span class="text-[#201a18] bg-green-600/20 font-bold p-1"
-        >{{this.titulo}}</span
-      >
+        {{#each this.servicos }}
+        <span
+          class="select-none cursor-default shadow-md bg-green-600/50 text-white underline font-bold p-1"
+          >{{this.titulo}}</span
+        >
+      </a>
       {{/each}}
     </li>
     {{/each}}
