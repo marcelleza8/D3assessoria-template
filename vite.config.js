@@ -41,6 +41,11 @@ export default ({ mode }) => {
             return v !== undefined && v;
           },
           isActiveOrUndefined: (value) => value === undefined || value,
+          json: (context) => JSON.stringify(context),
+          findById: (array, id, options) => {
+            const item = array.find((item) => item.id === id);
+            return item ? options.fn(item) : options.inverse(this);
+          },
         },
       }),
     ],

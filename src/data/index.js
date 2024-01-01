@@ -6,6 +6,9 @@ export default {
     "/about/index.html": {
       title: "About",
     },
+    "/servicos/estrategia-comunicacao-marketing.html": {
+      title: "Estrat\u00e9gias de Comunica\u00e7\u00e3o e Marketing",
+    },
   },
   extra: {
     title:
@@ -31,12 +34,17 @@ export default {
     ],
     servicos: [
       {
+        id: "estrategia-comunicacao-e-marketing",
         titulo: "Estrat\u00e9gias de Comunica\u00e7\u00e3o e Marketing",
-        url: "/servicos/estrategia-comunicacao-marketing",
+        texto:
+          "Aqui escrevemos um texto breve sobre Estratégia e comunicação de marketing.",
+        url: "/servicos/estrategia-comunicacao-marketing.html",
         bgImage: "./servicos/estrategia-comunicacao-marketing.png",
         servicos: [
           {
             titulo: "Assessoria de Imprensa",
+            bgImage: "/servicos/estrategia-comunicacao-marketing.png",
+            url: "/servicos/estrategia-comunicacao-marketing/assessoria-de-imprensa.html",
             texto: "Maximizando a visibilidade e o alcance na m\u00eddia.",
           },
           {
@@ -63,7 +71,7 @@ export default {
       },
       {
         titulo: "Produ\u00e7\u00e3o de Conte\u00fado e M\u00eddia",
-        url: "/servicos/producao-conteudo-midia",
+        url: "/servicos/producao-conteudo-midia.html",
         bgImage: "./servicos/producao-conteudo-midia.png",
         servicos: [
           {
@@ -80,7 +88,7 @@ export default {
       },
       {
         titulo: "An\u00e1lise e Intelig\u00eancia de Mercado",
-        url: "/servicos/analise-inteligencia-mercado",
+        url: "/servicos/analise-inteligencia-mercado.html",
         bgImage: "./servicos/analise-inteligencia-mercado.png",
         servicos: [
           {
@@ -102,7 +110,7 @@ export default {
       },
       {
         titulo: "Treinamento e Desenvolvimento",
-        url: "/servicos/treinamento-e-desenvolvimento",
+        url: "/servicos/treinamento-e-desenvolvimento.html",
         bgImage: "./servicos/treinamento-e-desenvolvimento.png",
         servicos: [
           {

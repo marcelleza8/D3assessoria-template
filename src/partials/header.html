@@ -47,11 +47,15 @@
       class="flex min-h-screen flex-col items-center py-8"
       aria-label="mobile"
     >
-      <a href="#pagina-inicial" class="w-full py-6 text-center hover:opacity-90"
+      <a
+        href="/index.html#pagina-inicial"
+        class="w-full py-6 text-center hover:opacity-90"
         >Página inicial</a
       >
       {{#each menu}}
-      <a href="{{this.url}}" class="w-full py-6 text-center hover:opacity-90"
+      <a
+        href="/index.html{{this.url}}"
+        class="w-full py-6 text-center hover:opacity-90"
         >{{ this.label }}</a
       >
       {{/each}}

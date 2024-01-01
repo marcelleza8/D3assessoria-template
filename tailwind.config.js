@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         "plus-jakarta-sans": ["Plus Jakarta Sans", "sans-serif"],
         urbanist: ["Urbanist", "sans-serif"],
+        outfit: ["outfit"],
       },
       colors: {
         rouge: {
