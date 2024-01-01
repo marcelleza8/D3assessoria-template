@@ -38,14 +38,22 @@ export default {
         titulo: "Estrat\u00e9gias de Comunica\u00e7\u00e3o e Marketing",
         texto:
           "Aqui escrevemos um texto breve sobre Estratégia e comunicação de marketing.",
-        url: "/servicos/estrategia-comunicacao-marketing.html",
-        bgImage: "./servicos/estrategia-comunicacao-marketing.png",
-        servicos: [
+        url: "/servicos/estrategia-comunicacao-marketing",
+        bgImage: "/imagens/servicos/estrategia-comunicacao-marketing.png",
+        atuacoes: [
           {
             titulo: "Assessoria de Imprensa",
-            bgImage: "/servicos/estrategia-comunicacao-marketing.png",
-            url: "/servicos/estrategia-comunicacao-marketing/assessoria-de-imprensa.html",
+            bgImage: "/imagens/servicos/estrategia-comunicacao-marketing.png",
+            url: "/servicos/estrategia-comunicacao-marketing/assessoria-de-imprensa",
             texto: "Maximizando a visibilidade e o alcance na m\u00eddia.",
+            details: [
+              {
+                text: "bloco um",
+              },
+              {
+                images: [],
+              },
+            ],
           },
           {
             titulo: "Gest\u00e3o de M\u00eddias Sociais",
@@ -72,8 +80,8 @@ export default {
       {
         titulo: "Produ\u00e7\u00e3o de Conte\u00fado e M\u00eddia",
         url: "/servicos/producao-conteudo-midia.html",
-        bgImage: "./servicos/producao-conteudo-midia.png",
-        servicos: [
+        bgImage: "/imagens/servicos/producao-conteudo-midia.png",
+        atuacoes: [
           {
             titulo: "Produ\u00e7\u00e3o Audiovisual",
             texto:
@@ -89,8 +97,8 @@ export default {
       {
         titulo: "An\u00e1lise e Intelig\u00eancia de Mercado",
         url: "/servicos/analise-inteligencia-mercado.html",
-        bgImage: "./servicos/analise-inteligencia-mercado.png",
-        servicos: [
+        bgImage: "/imagens/servicos/analise-inteligencia-mercado.png",
+        atuacoes: [
           {
             titulo: "Monitoramento e An\u00e1lise de M\u00eddia",
             texto:
@@ -111,8 +119,8 @@ export default {
       {
         titulo: "Treinamento e Desenvolvimento",
         url: "/servicos/treinamento-e-desenvolvimento.html",
-        bgImage: "./servicos/treinamento-e-desenvolvimento.png",
-        servicos: [
+        bgImage: "/imagens/servicos/treinamento-e-desenvolvimento.png",
+        atuacoes: [
           {
             titulo: "Media Training",
             texto:
